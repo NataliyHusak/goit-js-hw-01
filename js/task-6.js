@@ -4,16 +4,13 @@ let input;
 let total = 0;
 
 
-while (true) {
-  input = prompt('Введите число')
-  console.log(input += total);
-  
+while (input !==null ) {
+  input = prompt('Введите число');
+  total += Number(input);
+    
+  };
 
-  if (input === null) {
-    alert(input += total);
-    break;
-  }
-};
+alert("Общая сумма чисел равна ", total);
 
-console.log(input += total);
+// console.log("Общая сумма чисел равна ", input += total);
 
