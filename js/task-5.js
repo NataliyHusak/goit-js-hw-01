@@ -2,7 +2,11 @@
 
 let cost;
 
-let country = prompt("Enter the country for delivery");
+let country ;
+
+country = prompt("Enter the country for delivery");
+
+country = country.toLowerCase();
 
 switch (country) {
   case "china":
@@ -27,6 +31,11 @@ switch (country) {
 
   default:
     alert("Delivery is not available in your country.");
+};
+
+country = country[0].toUpperCase() + country.slice(1);
+
+if (cost > 0) {
+  console.log(`Delivery to ${country} will be cost ${cost} credits`);
 }
 
-console.log("Delivery to ", country, " will be cost ", cost, " credits");

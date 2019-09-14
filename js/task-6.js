@@ -3,14 +3,11 @@
 let input;
 let total = 0;
 
-
-while (input !==null ) {
-  input = prompt('Введите число');
+while (input !== null) {
+  input = prompt("Введите число");
   total += Number(input);
-    
-  };
+}
 
-alert("Общая сумма чисел равна ", total);
+const message = `Общая сумма чисел равна  ${total}`;
 
-// console.log("Общая сумма чисел равна ", input += total);
-
+alert(message);
